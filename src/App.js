@@ -23,7 +23,8 @@ function App() {
     console.log("full Url: ", fullUrl);
     fetch(fullUrl)
       .then((response) => response.json())
-      .then((data) => setData(data.hits));
+      .then((data) => setData(data.hits))
+      .then(console.log(data));
     // END fetch data
   }, [params]);
 
