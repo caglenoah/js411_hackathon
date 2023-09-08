@@ -1,5 +1,10 @@
+.App{
+  background-color: whitesmoke;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 * {
-  margin: 0;
   padding: 0;
   font-family: system-ui;
 }
@@ -20,22 +25,36 @@ h1 {
 }
 
 .search {
-  padding: 15px;
+  display: flex;
+  align-items: center;
   background-color: #ff742b;
+  height: 50px;
+  padding: 4px;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .hn-logo {
-  margin-right: 10px;
+  margin-right: 8px;
   font-size: 1.5rem;
   color: white;
   border: 2px solid white;
-  width: 100px;
   display: inline;
   padding: 5px 10px;
-  margin-bottom: 200px !important;
-  font-weight: 420;
+  font-weight: bold;
 }
-.in-range {
+.searchCat {
   display: inline-block;
   margin: 0.3em;
+}
+
+.label{
+  align-items: start;
+}
+
+.textbox{
+  height: 35px;
+  width: 70%;
 }
