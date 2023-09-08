@@ -49,11 +49,11 @@ const SearchForm = (props) => {
     <div>
       <form className="search" onSubmit={handleSubmit}>
         <p className="hn-logo">H</p>
-        <label>Search Hacker News </label>
-        <input type="text" value={searchQuery} onChange={handleChange} />
+        <label className="label">Search Hacker News </label>
+        <input className="textbox" type="text" placeholder="Search stories by title, url or author" value={searchQuery} onChange={handleChange} />
         <button type="submit">Submit</button>
       </form>
-      <p className="in-range">In range </p>
+      <p className="searchCat">Search</p>
       <select value={timeInput} onChange={createTimeInput}>
         <option value="All time">All time</option>
         <option value="Last 24hr">Last 24hr</option>
