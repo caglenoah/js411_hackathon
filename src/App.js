@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import SearchForm from "./components/SearchForm";
+import Footer from "./Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -35,6 +36,7 @@ function App() {
   // other components should use the data variable (and use [data] in the dependency array if using a useEffect hook)
 
   return (
+    <>
     <div className="App">
       <SearchForm params={params} setParams={setParams} />
       <h1>Results</h1>
@@ -45,6 +47,8 @@ function App() {
       </ul>
       {/* this <ul> element should be replaced by the ListArticles component*/}
     </div>
+    <Footer />
+    </>
   );
 }
 
