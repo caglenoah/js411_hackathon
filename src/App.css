@@ -58,3 +58,10 @@ h1 {
   height: 35px;
   width: 70%;
 }
+
+.img{
+  height:1cm;
+  width: 1cm;
+  bgcolor: #ff6600;
+  
+}

@@ -6,7 +6,7 @@ function Footer() {
     <div>
     <tr>
     <td>
-    <img src="s.gif" height="10" width="0" alt="line" />
+        <img src="https://news.ycombinator.com/s.gif" alt="orange line" />
             <table width="100%" cellspacing="0" cellpadding="1">
                 <tbody>
                     <tr>
