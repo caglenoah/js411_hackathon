@@ -1,3 +1,11 @@
+/**
+ * a. Renders props into a stylish view for the user
+
+b. The title is clickable and opens a new tab to the url of the article
+
+c. Displays points, author, date created, and url
+ */
+
 import React, { useState } from "react";
 
 const SearchForm = (props) => {

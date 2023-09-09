@@ -37,19 +37,29 @@ function App() {
 
   return (
     <>
-    <div className="App">
-      <SearchForm params={params} setParams={setParams} />
-      <h1>Results</h1>
-      <ul>
-        {data.map((results) => {
-          return <li key={results.created_at}>{results.title}</li>;
-        })}
-      </ul>
-      {/* this <ul> element should be replaced by the ListArticles component*/}
-    </div>
-    <img src="https://news.ycombinator.com/s.gif" alt="orange line" />
+      <div className="App">
+        <SearchForm params={params} setParams={setParams} />
+        <h1>Results</h1>
+        <ul>
+          {data.map((results) => {
+            return (
+              <li key={results.created_at}>
+                <a href={results.url} target="_blank" rel="noopener noreferrer">
+                  {results.title}
+                </a>
+                <p>
+                  Points: {results.points} | Author: {results.author} | Date
+                  Created: {results.created_at}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+        {/* this <ul> element should be replaced by the ListArticles component*/}
+      </div>
+      <img src="https://news.ycombinator.com/s.gif" alt="orange line" />
 
-    <Footer />
+      <Footer />
     </>
   );
 }
