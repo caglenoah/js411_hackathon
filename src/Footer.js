@@ -55,7 +55,7 @@ export default Footer;
 // FROM actual HN site:
 /* <tr>
     <td>
-        <img src="s.gif" height="10" width="0">
+        <img src="s.gif" height="10" width="0"> ==$0
             <table width="100%" cellspacing="0" cellpadding="1">
                 <tbody><tr>
                     <td bgcolor="#ff6600"></td>

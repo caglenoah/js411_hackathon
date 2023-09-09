@@ -47,6 +47,8 @@ function App() {
       </ul>
       {/* this <ul> element should be replaced by the ListArticles component*/}
     </div>
+    <img src="https://news.ycombinator.com/s.gif" alt="orange line" />
+
     <Footer />
     </>
   );
