@@ -2,45 +2,28 @@ import React from 'react';
 
 function Footer() {
   return (
-    <>
-    <div>
-    <tr>
-    <td>
-        <img src="https://news.ycombinator.com/s.gif" alt="orange line" />
-            <table width="100%" cellspacing="0" cellpadding="1">
-                <tbody>
-                    <tr>
-                    <td bgcolor="#ff6600"></td></tr>
-                </tbody></table>
-           </td>
-           </tr>
-    </div>
-    <br/>  
-      
-    
-    <div>
     <center>
-        <span class="yclinks">
-            <a href="https://news.ycombinator.com/newsguidelines.html">Guidelines</a>
-            <a> |  </a>
-            <a href="https://news.ycombinator.com/newsfaq.html">FAQ</a>
-            <a> |  </a>
-            <a href="https://news.ycombinator.com/lists">Lists</a>
-            <a> |  </a>
-            <a href="https://github.com/HackerNews/API">API</a>
-            <a> |  </a>
-            <a href="https://news.ycombinator.com/security.html">Security</a>
-            <a> |  </a>
-            <a href="https://www.ycombinator.com/legal/">Legal</a>
-            <a> |  </a>
-            <a href="https://www.ycombinator.com/apply/">Apply to YC</a>
-            <a> |  </a>
-            <a href="mailto:hn@ycombinator.com">Contact</a>
-        </span>
-    <br />
+        <>
+        <footer class="Footer">
+            <ul class="Footer_list">
+                <li><a href="https://hn.algolia.com/about" style={{ textDecoration: 'none' }}>About</a></li>                
+                <li> •  </li>
+                <li><a href="https://hn.algolia.com/settings" style={{ textDecoration: 'none' }}>Setting</a></li>
+                <li> •  </li>
+                <li><a href="https://hn.algolia.com/help" style={{ textDecoration: 'none' }}>Help</a></li>
+                <li> •  </li>
+                <li><a href="https://hn.algolia.com/api" style={{ textDecoration: 'none' }}>API Documentation</a></li>
+                <li> •  </li>
+                <li><a href="https://news.ycombinator.com/" style={{ textDecoration: 'none' }}>Hacker News</a></li>
+                <li> •  </li>
+                <li><a href="https://github.com/algolia/hn-search" style={{ textDecoration: 'none' }}>Fork/Contribute</a></li>
+                <li> •  </li>
+                <li><a href="https://hn.algolia.com/cool_apps" style={{ textDecoration: 'none' }}>Cool Apps</a></li>
+            </ul>
+        </footer>
+        </>
     </center>
-    </div>;
-    </>
+
 
     );
 };

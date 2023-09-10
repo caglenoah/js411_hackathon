@@ -44,10 +44,8 @@ function App() {
       <div className="App">
         <SearchForm params={params} setParams={setParams} />
         <h1>Results</h1>
-        <ListArticles data={data} />
+        <ListArticles data={data} />        
       </div>
-      <img src="https://news.ycombinator.com/s.gif" alt="orange line" />
-
       <Footer />
     </>
   );

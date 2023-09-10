@@ -59,9 +59,22 @@ h1 {
   width: 70%;
 }
 
-.img{
-  height:1cm;
-  width: 1cm;
-  bgcolor: #ff6600;
-  
+.Footer_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 14px !important;
+  padding: 8px 8px 30px;
+  margin: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
