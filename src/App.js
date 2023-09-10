@@ -3,11 +3,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import SearchForm from "./components/SearchForm";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import ListArticles from "./components/ListArticles";
-
-
-
 
 function App() {
   const [data, setData] = useState([]);
@@ -43,8 +40,7 @@ function App() {
     <>
       <div className="App">
         <SearchForm params={params} setParams={setParams} />
-        <h1>Results</h1>
-        <ListArticles data={data} />        
+        <ListArticles data={data} />
       </div>
       <Footer />
     </>

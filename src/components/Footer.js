@@ -4,8 +4,8 @@ function Footer() {
   return (
     <center>
         <>
-        <footer class="Footer">
-            <ul class="Footer_list">
+        <footer className="Footer">
+            <ul className="Footer_list">
                 <li><a href="https://hn.algolia.com/about" style={{ textDecoration: 'none' }}>About</a></li>                
                 <li> •  </li>
                 <li><a href="https://hn.algolia.com/settings" style={{ textDecoration: 'none' }}>Setting</a></li>
@@ -23,15 +23,8 @@ function Footer() {
         </footer>
         </>
     </center>
-
-
     );
 };
 
 export default Footer;
-
-
-
-
-
 
