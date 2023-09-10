@@ -1,5 +1,5 @@
-.App{
-  background-color: whitesmoke;
+.App {
+  background-color: #f6f6ef;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -50,16 +50,16 @@ h1 {
   margin: 0.3em;
 }
 
-.label{
+.label {
   align-items: start;
 }
 
-.textbox{
+.textbox {
   height: 35px;
   width: 70%;
 }
 
-.Footer_list{
+.Footer_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -77,4 +77,20 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+}
+
+.grey {
+  color: #828282 !important;
+  font-size: 0.75em;
 }

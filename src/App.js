@@ -3,11 +3,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import SearchForm from "./components/SearchForm";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import ListArticles from "./components/ListArticles";
-
-
-
 
 function App() {
   const [data, setData] = useState([]);
@@ -21,9 +18,9 @@ function App() {
     console.log(`params: `, params);
     let fullUrl = popularSearch + params.join("&");
     if (params && params.length > 0) {
-      fullUrl += "&hitsPerPage=35";
+      fullUrl += "&hitsPerPage=45";
     } else {
-      fullUrl += "hitsPerPage=35";
+      fullUrl += "hitsPerPage=45";
     }
     console.log("full Url: ", fullUrl);
     fetch(fullUrl)
@@ -43,8 +40,7 @@ function App() {
     <>
       <div className="App">
         <SearchForm params={params} setParams={setParams} />
-        <h1>Results</h1>
-        <ListArticles data={data} />        
+        <ListArticles data={data} />
       </div>
       <Footer />
     </>
