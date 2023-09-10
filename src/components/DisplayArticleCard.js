@@ -1,6 +1,11 @@
 import React from "react";
 
 export default function DisplayArticleCard(props) {
+  console.log(props.results.title);
+  console.log(props.results.url);
+  if (!props.results.title || !props.results.url) {
+    return;
+  }
   return (
     <li>
       <a href={props.results.url} target="_blank" rel="noopener noreferrer">

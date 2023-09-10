@@ -18,9 +18,9 @@ function App() {
     console.log(`params: `, params);
     let fullUrl = popularSearch + params.join("&");
     if (params && params.length > 0) {
-      fullUrl += "&hitsPerPage=35";
+      fullUrl += "&hitsPerPage=45";
     } else {
-      fullUrl += "hitsPerPage=35";
+      fullUrl += "hitsPerPage=45";
     }
     console.log("full Url: ", fullUrl);
     fetch(fullUrl)
