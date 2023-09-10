@@ -52,28 +52,3 @@ export default Footer;
 
 
 
-// FROM actual HN site:
-/* <tr>
-    <td>
-        <img src="s.gif" height="10" width="0"> ==$0
-            <table width="100%" cellspacing="0" cellpadding="1">
-                <tbody><tr>
-                    <td bgcolor="#ff6600"></td>
-           </tbody></table>
-           </td>
-           </tr>
-<br/>
-
-<center>
-    <span class="yclinks"
-    ><a href="newsguidelines.html">Guidelines</a> | 
-    <a href="newsfaq.html">FAQ</a> | 
-    <a href="lists">Lists</a> | 
-    <a href="https://github.com/HackerNews/API">API</a> | 
-    <a href="security.html">Security</a> | 
-    <a href="https://www.ycombinator.com/legal/">Legal</a> | 
-    <a href="https://www.ycombinator.com/apply/">Apply to YC</a> | 
-    <a href="mailto:hn@ycombinator.com">Contact</a>
-    </span>
-    <br />
-</center> */

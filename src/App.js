@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import SearchForm from "./components/SearchForm";
 import Footer from "./Footer";
+import ListArticles from "./components/ListArticles";
+
+
+
 
 function App() {
   const [data, setData] = useState([]);
@@ -40,22 +44,7 @@ function App() {
       <div className="App">
         <SearchForm params={params} setParams={setParams} />
         <h1>Results</h1>
-        <ul>
-          {data.map((results) => {
-            return (
-              <li key={results.created_at}>
-                <a href={results.url} target="_blank" rel="noopener noreferrer">
-                  {results.title}
-                </a>
-                <p>
-                  Points: {results.points} | Author: {results.author} | Date
-                  Created: {results.created_at}
-                </p>
-              </li>
-            );
-          })}
-        </ul>
-        {/* this <ul> element should be replaced by the ListArticles component*/}
+        <ListArticles data={data} />
       </div>
       <img src="https://news.ycombinator.com/s.gif" alt="orange line" />
 
